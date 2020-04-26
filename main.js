@@ -15,12 +15,13 @@ const renderProduct = (title, price, img = "https://unsplash.it/150/150?random&a
 };
 
 const renderProducts = (list) => {
-   const productList = list.map((good) => {
-     return renderProduct(good.title, good.price);
-   });
- 
-  console.log(productList);
-  document.querySelector('.products').innerHTML = productList;
+  const productList = list.map((good) => {
+    return renderProduct(good.title, good.price);
+  
+  });
+  const productCheckList = productList.join(' ');
+
+ document.querySelector('.products').innerHTML = productCheckList;
 };
 
 renderProducts(products);
