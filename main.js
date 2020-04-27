@@ -16,6 +16,16 @@ class ProductList {
     this.allProducts = [];
     this._fetchProducts();
     this._render();
+    this.totalAllProducts();
+  }
+
+  totalAllProducts() {
+    let sum = 0;
+    for (let key in this.allProducts) {
+      sum += this.allProducts[key].price;
+  }
+    return sum;
+    console.log(totalAllProducts);
   }
 
   _fetchProducts() {
