@@ -1,3 +1,14 @@
+class Basket {}
+//Выводит список продуктов с их свойствами
+//Выводит сумму заказа
+//Удаляет продукт из корзины
+
+
+class BasketProducts {}
+
+//Добавляет продукт с его свойсвами
+//Добавляет продукт в объект с другими продуктами
+
 class ProductList {
   constructor(container = '.products') {
     this.container = container;
