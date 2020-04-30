@@ -1,3 +1,4 @@
+
 class ProductList {
   constructor(container = '.products') {
     this.container = container;
@@ -5,7 +6,7 @@ class ProductList {
     this.allProducts = [];
     this._fetchProducts();
     this._render();
-  }
+
 
   _fetchProducts() {
     this.goods = [
